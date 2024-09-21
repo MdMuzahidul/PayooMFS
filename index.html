@@ -26,25 +26,44 @@
       </nav>
     </header>
     <main class="max-w-[80%] mx-auto">
-      <section class="min-h-full w-96 border">
-        <form>
-          <p>mobile number</p>
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Enter your mobile number"
-          />
-          <p>mobile number</p>
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Enter your mobile number"
-          />
-        </form>
+      <section class="w-full h-[600px] flex justify-center items-center">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Phone number</span>
+              </label>
+              <input
+                type="text"
+                placeholder="phone nubmer"
+                class="input input-bordered"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">4-digit pin</span>
+              </label>
+              <input
+                type="password"
+                placeholder="your pin"
+                class="input input-bordered"
+                required
+              />
+              <label class="label">
+                <a href="#" class="label-text-alt link link-hover"
+                  >Forgot password?</a
+                >
+              </label>
+            </div>
+            <div class="form-control mt-6">
+              <button id="submit-btn" class="btn btn-primary bg-blue-600 hover:bg-blue-600">Login</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer></footer>
+    <script src="script/getInput.js"></script>
   </body>
 </html>
